@@ -59,7 +59,7 @@ A high-performance C++ implementation of the parametric 3D model generator, expa
 - **View Matrix Transformations:** Dynamically re-calculates camera-to-world transformations using `gluLookAt` and custom mouse gesture velocity vectors.
 - **Interactive Controls:**
   - `M`: Toggle the active control paradigm between **Model Mode** and **Camera Mode**.
-  - `Mouse Drag` / `Scroll`: Rotate (X/Y axes) and scale the rendered 3D model (in Model Mode), or orbit, zoom, and sweep the virtual camera (in Camera Mode).
+  - `LMB Drag` / `RMB Drag`: Rotate (X/Y axes) and scale the rendered 3D model (in Model Mode), or orbit, zoom, and sweep the virtual camera (in Camera Mode).
 
 ### Technologies
 - **C++20**
