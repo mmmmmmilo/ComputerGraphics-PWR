@@ -53,10 +53,13 @@ An introductory project implementing a 3D model generator that mathematically ca
 A high-performance C++ implementation of the parametric 3D model generator, expanding on the concepts from Project 1. This project introduces a dual-mode transformation matrix system that permits user interaction with either the model's transformation matrices (translation, rotation, scale) or a fully dynamic virtual camera system navigating spherical coordinates.
 
 ### Highlights & Implementation Details
-- **Dual-Mode Control Paradigm:** Toggle between modes using the `M` key:
+- **Dual-Mode Control Paradigm:**
   - **Model Mode:** Directly rotate (X/Y axes) and scale the rendered 3D egg model using the mouse.
   - **Camera Mode:** Orbit, zoom, and sweep a virtual camera in 3D space using spherical coordinate transformations ($\theta$, $\phi$, $r$) bound to mouse inputs.
 - **View Matrix Transformations:** Dynamically re-calculates camera-to-world transformations using `gluLookAt` and custom mouse gesture velocity vectors.
+- **Interactive Controls:**
+  - `M`: Toggle the active control paradigm between **Model Mode** and **Camera Mode**.
+  - `Mouse Drag` / `Scroll`: Rotate (X/Y axes) and scale the rendered 3D model (in Model Mode), or orbit, zoom, and sweep the virtual camera (in Camera Mode).
 
 ### Technologies
 - **C++20**
