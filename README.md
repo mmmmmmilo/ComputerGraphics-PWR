@@ -96,9 +96,11 @@ A system demonstrating 3D texture mapping, texture coordinates, and custom file 
 
 ### Prerequisites
 Ensure the following tools are installed and accessible in your system's `PATH`:
-* **C++ Compiler:** MSVC (Windows), GCC 11+, or Clang 13+ (Linux) with C++20 support.
+* **C++ Compiler:** GCC 11+, or Clang 13+ (Linux) with C++20 support.
 * **CMake:** Version 3.19 or newer.
 * **Python Environment:** Python 3 with pip.
+
+>Platform Support Note: This project is natively developed and tested on Linux. Windows compilation is not officially supported due to strict dependencies on Unix-like build environments and native package managers.
 
 ### Python Setup (Project 1)
 Install the required dependencies via pip:
@@ -126,31 +128,16 @@ cmake --build .
 
 ```
 
-### C++ Setup (Windows)
-
-Ensure you have your compiler environment correctly configured (e.g., using the "x64 Native Tools Command Prompt for VS").
-
-Generate build files and compile:
-
-```cmd
-mkdir build
-cd build
-cmake ..
-cmake --build . --config Release
-
-```
-
 ### Running the Applications
 
 Navigate to the root directory for Python, or the build folder to run the C++ projects:
 
 #### Project 1 (Python)
 
-* **Linux / Windows:** `python3 main.py` (Execute inside the specific Project 1 directory)
+* **Linux:** `python3 main.py` (Execute inside the specific Project 1 directory)
 
 #### Projects 2, 3, and 4 (C++)
 
 The executables are generated in the build directory. Run them directly from there based on the project you want to test (replace `<project_number>` with `2`, `3`, or `4`):
 
 * **Linux:** `./<project_number>`
-* **Windows:** `.\Release\<project_number>.exe`
